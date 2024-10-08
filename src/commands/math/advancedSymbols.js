@@ -123,7 +123,7 @@ LatexCmds.mathbb = P(MathCommand, function (_) {
     return optWhitespace
       .then(string("{"))
       .then(optWhitespace)
-      .then(regex(/^[NPZQRCH]/))
+      .then(regex(/^[NPZDQRCH]/))
       .skip(optWhitespace)
       .skip(string("}"))
       .map(function (c) {
