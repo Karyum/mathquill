@@ -544,15 +544,15 @@ LatexCmds.mp =
   LatexCmds.minusplus =
     bind(PlusMinus, "\\mp ", "&#8723;");
 
-// CharCmds['*'] = LatexCmds.sdot = LatexCmds.cdot =
-//   bind(BinaryOperator, '\\cdot ', '&middot;', '*');
+CharCmds['*'] = LatexCmds.sdot = LatexCmds.cdot =
+  bind(BinaryOperator, '\\cdot ', '&middot;', '*');
 //semantically should be &sdot;, but &middot; looks better
-CharCmds["*"] = LatexCmds.times = bind(
-  BinaryOperator,
-  "\\times ",
-  "&times;",
-  "[x]"
-);
+// CharCmds["*"] = LatexCmds.times = bind(
+//   BinaryOperator,
+//   "\\times ",
+//   "&times;",
+//   "[x]"
+// );
 
 var Inequality = P(BinaryOperator, function (_, super_) {
   _.init = function (data, strict) {
