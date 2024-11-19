@@ -1,5 +1,5 @@
 {
-  "name": "mathquill4keyboard",
+  "name": "@karyum/mathquill4keyboard",
   "description": "Easily type math in your webapp",
   "version": "0.10.9",
   "license": "MPL-2.0",
